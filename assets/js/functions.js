@@ -40,8 +40,8 @@ function deactivateMenu() {
 }
 
 function checkURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    if(urlParams.get("r")!==null) {
+    const urlParams = new URLSearchParams(location.search);
+    if(urlParams.get("r")!=null) {
         location.href = "https://nerotv.live/"+urlParams.get("r");
         return;
     }
